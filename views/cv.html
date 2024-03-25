@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misty Fan</title>
+    <meta name="author" content="Misty Fan">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Misty Fan professional website">
+</head>
+<body onload="addYear()">
+    <header>
+        <h1 id="webname">Misty Fan</h1>
+        <nav id="myTopnav" class="topnav">
+            <a href="index.html">Home</a>
+            <a href="cv.html" class="active">CV</a>
+            <a href="contact.html">Contact me</a>
+            <a href="fun.html">For fun</a>
+            <a href="javascript:void(0);" class="icon" >
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars" onclick="activeNav()"></i>
+            </a>
+        </nav>
+    </header>
+    <div class="main">
+        <h2> Curriculum Vitae </h2>
+        <table>
+            <tr><th>Name</th><th>Description</th></tr>
+            <tr><td>Mt. Lebanon High School</td><td><ul>
+                <li>Graduated June 6, 2023</li>
+                <li>GPA: 4.0, Cumulative: 5.4</li>
+            </ul></td></tr>
+            <tr><td>Tzu Chi Academy Pittsburgh</td><td>Graduated May 7, 2023</td></tr>
+            <tr><td>Carnegie Mellon University</td><td><ul>
+                <li>Bachelor of Science</li>
+                <li>Majoring in Information Systems</li>
+                <li>Intended minors in AI and Chinese Studies</li>
+                <li><strong>Expected to Graduate</strong>: May 15, 2027</li>
+                <li>Current GPA: 3.78</li>
+            </ul></td></tr>
+            <tr><td>La Gourmandine Front of the House Bakery Clerk</td><td> Helped open and close the shop, which would include making sandwiches/sandwich prep, displaying the food in an aesthetic way, and cleaning as well, along with assisting customers.</td></tr>
+        </table>
+        <a href = "../static/MistyResume.pdf" target = "_blank">My resume - PDF version</a>
+    </div>
+    <footer>
+        <p id="copyYear">
+            Misty Fan &copy;
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misty Fan</title>
+    <meta name="author" content="Misty Fan">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Misty Fan professional website">
+</head>
+<body onload="addYear()">
+    <header>
+        <h1 id="webname">Misty Fan</h1>
+        <nav id="myTopnav" class="topnav">
+            <a href="index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html" class="active">Contact me</a>
+            <a href="fun.html">For fun</a>
+            <a href="javascript:void(0);" class="icon" >
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars" onclick="activeNav()"></i>
+            </a>
+        </nav>
+    </header>
+    <div class="main">
+        <h2> Contact Me </h2>
+        <form action="">
+            <label for="UserName">Your name (required): </label>
+            <input type="text" name="UserName" id="UserName" required>
+
+            <label for="UserEmail">Your email (required): </label>
+            <input type="email" name="UserEmail" id="UserEmail" required>
+
+            <label for="UserText">Your text (required): </label>
+            <textarea name="UserText" id="UserText" cols="30" rows="10" required></textarea>
+
+            <input type="submit" value="Send" onclick="validate()">
+        </form>
+
+        <p id="ValidateMsg"></p>
+        <table>
+            <tr>
+                <tr><th>Contact Method</th><th>Description</th></tr>
+                <tr><td>Email</td><td>mistyf@andrew.cmu.edu</td></tr>
+                <tr><td>Phone</td><td>(724)-624-3030</td></tr>
+                <tr><td>Social Media</td><td>Instagram: miixsty</td></tr>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <p id="copyYear">
+            Misty Fan &copy;
+        </p>
+    </footer>
+</body>
+</html>
